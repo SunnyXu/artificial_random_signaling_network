@@ -1,0 +1,263 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Topology analysis &mdash; artificial_random_signaling_network 1.0.0 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Dynamics examples" href="Dynamics.html" />
+    <link rel="prev" title="Visualization examples" href="Visualization.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home" alt="Documentation Home"> artificial_random_signaling_network
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="Using.html">Using</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Visualization.html">Visualization examples</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Topology analysis</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#definations-and-examples">Definations and examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#code-availability">Code availability</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#using">Using</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Dynamics.html">Dynamics examples</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">artificial_random_signaling_network</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Topology analysis</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/Topology.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="topology-analysis">
+<span id="topology"></span><h1>Topology analysis<a class="headerlink" href="#topology-analysis" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="definations-and-examples">
+<h2>Definations and examples<a class="headerlink" href="#definations-and-examples" title="Permalink to this headline">¶</a></h2>
+<p>From the perspective of topology,we first compared the distribution of reaction degree of species,
+defined as the number of reactions one species belonged to. We also observed the distribution of
+reaction distance between a random pair of species, defined as the minimum number of reactions
+between the two species. As an extreme case, if two species belonged to one reaction, the reaction
+distance was zero. Figure below shows the two topological distributions of our generated synthetic
+random signaling networks compared with the signaling networks from the BioModels Database.</p>
+<a class="reference internal image-reference" href="_images/Topology.png"><img alt="_images/Topology.png" src="_images/Topology.png" style="width: 700px;" /></a>
+</div>
+<div class="section" id="code-availability">
+<h2>Code availability<a class="headerlink" href="#code-availability" title="Permalink to this headline">¶</a></h2>
+<p>The Python scripts for the topology analysis of reaction degree distributions and reaction distance
+distributions were also available on
+<a class="reference external" href="https://github.com/sys-bio/artificial_random_signaling_network/tree/master/topology_analysis">GitHub</a>.
+The code made use of libSBML with a zip file of SBML files as input and distributions as output.</p>
+</div>
+<div class="section" id="using">
+<h2>Using<a class="headerlink" href="#using" title="Permalink to this headline">¶</a></h2>
+<p>1. <strong>To use the Python script rxn_degree_dist.py to generate reaction degree distributions.</strong>
+For example, to analysis a set of SBML files of signaling networks downloaded from BioModels
+Database.</p>
+<ul class="simple">
+<li><p>First of all, create a folder Biomodels as on GitHub (<a class="reference external" href="https://github.com/sys-bio/artificial_random_signaling_network/tree/master/topology_analysis/degree_dist/Biomodels">https://github.com/sys-bio/artificial_random_signaling_network/tree/master/topology_analysis/degree_dist/Biomodels</a>).</p></li>
+<li><p>Then, put the <a class="reference external" href="https://github.com/sys-bio/artificial_random_signaling_network/tree/master/topology_analysis/degree_dist/Biomodels/Biomodels.zip">zip file</a> of the SBML files into the folder.</p></li>
+<li><p>Finally, run the Python script <a class="reference external" href="https://github.com/sys-bio/artificial_random_signaling_network/tree/master/topology_analysis/degree_dist/Biomodels/rxn_degree_dist.py">rxn_degree_dist.py</a>.</p></li>
+<li><p>The generated results include the degree distribution data saved as degree_dist.txt, the plot of the degree distribution saved as Degree_Distribution.pdf, and the zip file would also get upziped as BioModels.</p></li>
+</ul>
+<p>Users can use similar procedure to generate reaction degree distributions for synthetic signaling
+networks referring to the example on GitHub (<a class="reference external" href="https://github.com/sys-bio/artificial_random_signaling_network/tree/master/topology_analysis/degree_dist/synthetic_networks">https://github.com/sys-bio/artificial_random_signaling_network/tree/master/topology_analysis/degree_dist/synthetic_networks</a>).</p>
+<p>2. <strong>To use the Python script rxn_distance_dist.py to generate reaction distance distributions.</strong>
+For example, to analysis a set of SBML files of signaling networks downloaded from BioModels
+Database.</p>
+<ul class="simple">
+<li><p>First of all, create a folder Biomodels as on GitHub (<a class="reference external" href="https://github.com/sys-bio/artificial_random_signaling_network/tree/master/topology_analysis/distance_dist/Biomodels">https://github.com/sys-bio/artificial_random_signaling_network/tree/master/topology_analysis/distance_dist/Biomodels</a>).</p></li>
+<li><p>Then, put the <a class="reference external" href="https://github.com/sys-bio/artificial_random_signaling_network/tree/master/topology_analysis/degree_dist/Biomodels/Biomodels.zip">zip file</a> of the SBML files into the folder.</p></li>
+<li><p>Finally, run the Python script <a class="reference external" href="https://github.com/sys-bio/artificial_random_signaling_network/tree/master/topology_analysis/distance_dist/Biomodels/rxn_distance_dist.py">rxn_distance_dist.py</a>.</p></li>
+<li><p>The generated results include the distance distribution data saved as distance_dist.txt, the plot of the distance distribution saved as Distance_Distribution.pdf, and the zip file would also get upziped as BioModels.</p></li>
+</ul>
+<p>Users can use similar procedure to generate reaction distance distributions for synthetic signaling
+networks referring to the example on GitHub (<a class="reference external" href="https://github.com/sys-bio/artificial_random_signaling_network/tree/master/topology_analysis/distance_dist/synthetic_networks">https://github.com/sys-bio/artificial_random_signaling_network/tree/master/topology_analysis/distance_dist/synthetic_networks</a>).</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="Dynamics.html" class="btn btn-neutral float-right" title="Dynamics examples" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="Visualization.html" class="btn btn-neutral float-left" title="Visualization examples" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2024, Jin Xu
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

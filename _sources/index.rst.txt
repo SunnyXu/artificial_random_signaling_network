@@ -1,0 +1,28 @@
+.. artificial_random_signaling_network documentation master file, created by
+   sphinx-quickstart on Mon May 20 10:52:45 2024.
+   You can adapt this file completely to your liking, but it should at least
+   contain the root `toctree` directive.
+
+Welcome to artificial_random_signaling_network's documentation!
+===============================================================
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Contents:
+
+   Using
+   Visualization
+   Topology
+   Dynamics
+
+-------------
+Introduction
+-------------
+
+The artificial_random_signaling_network Github repo can help generate artificial random signaling 
+networks by a Julia script with a set of parameters and can also help with topological analysis 
+by Python scripts. The documentation provides some tutorial and examples for potential users.
+
+If you would like to use any of the code, please cite the article 
+(https://www.biorxiv.org/content/10.1101/2020.05.08.084848) and the Github webpage 
+(https://github.com/SunnyXu/artificial_random_signaling_network). Thanks. 

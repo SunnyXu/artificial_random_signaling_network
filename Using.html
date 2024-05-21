@@ -1,0 +1,276 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Using &mdash; artificial_random_signaling_network 1.0.0 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Visualization examples" href="Visualization.html" />
+    <link rel="prev" title="Welcome to artificial_random_signaling_network’s documentation!" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home" alt="Documentation Home"> artificial_random_signaling_network
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Using</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#using-julia-script-to-generate-synthetic-signaling-networks">Using Julia script to generate synthetic signaling networks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#adjustable-parameters-for-biological-applications">Adjustable parameters for biological applications</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#default-parameters-setup">Default parameters setup</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Visualization.html">Visualization examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Topology.html">Topology analysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Dynamics.html">Dynamics examples</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">artificial_random_signaling_network</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Using</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/Using.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="using">
+<span id="id1"></span><h1>Using<a class="headerlink" href="#using" title="Permalink to this headline">¶</a></h1>
+<p>The artificial_random_signaling_network Github repo can help generate artificial random signaling
+networks by a Julia script Ground_truth_generation.jl with a set of parameters. Users can adjust
+some of the relative parameters for biological insights and applications.</p>
+<div class="section" id="using-julia-script-to-generate-synthetic-signaling-networks">
+<h2>Using Julia script to generate synthetic signaling networks<a class="headerlink" href="#using-julia-script-to-generate-synthetic-signaling-networks" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li><p>To use the Julia script, first install Julia by going to the Julia website (<a class="reference external" href="https://julialang.org/">https://julialang.org/</a>).</p></li>
+<li><p>Once you have the Julia console open, make sure you have “RoadRunner” installed by typing:</p></li>
+</ol>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">julia</span><span class="o">&gt;</span> <span class="kn">import</span> <span class="nn">Pkg</span>
+
+<span class="n">julia</span><span class="o">&gt;</span> <span class="n">Pkg</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;RoadRunner&quot;</span><span class="p">,</span> <span class="n">version</span> <span class="o">=</span> <span class="s2">&quot;0.1.2&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>RoadRunner.jl is a Julia package for the library of libRoadRunner that is used to provide SBML
+simulation support. Note that the dependency RoadRunner.jl is currently only applicable on Windows
+and Linux, so users cannot run the provided Julia script on Mac until an update from RoadRunner.jl.</p>
+<p>3. Follow the Julia warnings to install other necessary Julia packages if they have not been
+installed already.</p>
+<p>4. Finally, download the Julia script from
+<a class="reference external" href="https://github.com/sys-bio/artificial_random_signaling_network/blob/master/Ground_truth_generation.jl">GitHub</a>
+into one folder. At the Julia console type: include(“pathto\Ground_truth_generation.jl”) to run
+the main script. Note that “pathto” was the path where you saved the network generation script to,
+and the double backslash was to avoid Julia misinterpreting the backslash as a control character.</p>
+<p>5. A random signaling network would be generated in SBML format called sampleNetwork0.xml before the
+steady state and sampleNetwork.xml after the steady state.</p>
+<p>6. The Julia script was implemented in Julia 1.6 on Windows 10 with RoadRunner.jl version 0.1.2 for
+all the results available on the repo.</p>
+</div>
+<div class="section" id="adjustable-parameters-for-biological-applications">
+<h2>Adjustable parameters for biological applications<a class="headerlink" href="#adjustable-parameters-for-biological-applications" title="Permalink to this headline">¶</a></h2>
+<p>There were some configuration settings in the Julia script file Ground_truth_generation.jl.
+These included:
+* The number of species “nSpeces”</p>
+<ul class="simple">
+<li><p>number of gene species “nSpecies_gene”</p></li>
+<li><p>number of reactions “nRxns”</p></li>
+<li><p>Randomly assigned ranges for species concentrations and rate constants could be modified via “rnd_species” and “rnd_parameter”.</p></li>
+<li><p>“concentration_perturb” could be used to set the factor that perturbs the concentration at the input species. Default was set to 2.</p></li>
+<li><p>The number of random networks to generate could be set by changing the variable “sampleSize”.</p></li>
+</ul>
+</div>
+<div class="section" id="default-parameters-setup">
+<h2>Default parameters setup<a class="headerlink" href="#default-parameters-setup" title="Permalink to this headline">¶</a></h2>
+<p>All the results are generated by the default parameter settings in the Julia script file
+Ground_truth_generation.jl.</p>
+<ul class="simple">
+<li><p>The number of species “nSpeces”</p></li>
+<li><p>number of gene species “nSpecies_gene”</p></li>
+<li><p>number of reactions “nRxns”</p></li>
+<li><p>Randomly assigned ranges for species concentrations and rate constants could be modified via “rnd_species” and “rnd_parameter”.</p></li>
+<li><p>“concentration_perturb” could be used to set the factor that perturbs the concentration at the input species. Default was set to 2.</p></li>
+<li><p>The number of random networks to generate could be set by changing the variable “sampleSize”.</p></li>
+</ul>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="Visualization.html" class="btn btn-neutral float-right" title="Visualization examples" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="index.html" class="btn btn-neutral float-left" title="Welcome to artificial_random_signaling_network’s documentation!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2024, Jin Xu
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
