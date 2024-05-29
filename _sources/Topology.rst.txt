@@ -40,9 +40,9 @@ Database.
 
 - First of all, create a folder Biomodels as on GitHub (https://github.com/sys-bio/artificial_random_signaling_network/tree/master/topology_analysis/degree_dist/Biomodels).
 
-- Then, put the `zip file <https://github.com/sys-bio/artificial_random_signaling_network/tree/master/topology_analysis/degree_dist/Biomodels/Biomodels.zip>`_ of the SBML files into the folder.
+- Then, put the `zip file <https://github.com/sys-bio/artificial_random_signaling_network/blob/master/topology_analysis/degree_dist/Biomodels/Biomodels.zip>`_ of the SBML files into the folder.
 
-- Finally, run the Python script `rxn_degree_dist.py <https://github.com/sys-bio/artificial_random_signaling_network/tree/master/topology_analysis/degree_dist/Biomodels/rxn_degree_dist.py>`_.
+- Finally, run the Python script `rxn_degree_dist.py <https://github.com/sys-bio/artificial_random_signaling_network/blob/master/topology_analysis/degree_dist/Biomodels/rxn_degree_dist.py>`_.
 
 - The generated results include the degree distribution data saved as degree_dist.txt, the plot of the degree distribution saved as Degree_Distribution.pdf, and the zip file would also get upziped as a folder BioModels.
 
@@ -56,9 +56,9 @@ For example, to analysis a set of SBML files of signaling networks downloaded fr
 
 - First of all, create a folder Biomodels as on GitHub (https://github.com/sys-bio/artificial_random_signaling_network/tree/master/topology_analysis/distance_dist/Biomodels).
 
-- Then, put the `zip file <https://github.com/sys-bio/artificial_random_signaling_network/tree/master/topology_analysis/degree_dist/Biomodels/Biomodels.zip>`_ of the SBML files into the folder.
+- Then, put the `zip file <https://github.com/sys-bio/artificial_random_signaling_network/blob/master/topology_analysis/distance_dist/Biomodels/Biomodels.zip>`_ of the SBML files into the folder.
 
-- Finally, run the Python script `rxn_distance_dist.py <https://github.com/sys-bio/artificial_random_signaling_network/tree/master/topology_analysis/distance_dist/Biomodels/rxn_distance_dist.py>`_.
+- Finally, run the Python script `rxn_distance_dist.py <https://github.com/sys-bio/artificial_random_signaling_network/blob/master/topology_analysis/distance_dist/Biomodels/rxn_distance_dist.py>`_.
 
 - The generated results include the distance distribution data saved as distance_dist.txt, the plot of the distance distribution saved as Distance_Distribution.pdf, and the zip file would also get upziped as a folder BioModels.
 
