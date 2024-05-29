@@ -36,7 +36,7 @@
     
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Dynamics examples" href="Dynamics.html" />
+    <link rel="next" title="Dynamic examples" href="Dynamics.html" />
     <link rel="prev" title="Visualization examples" href="Visualization.html" /> 
 </head>
 
@@ -92,7 +92,7 @@
 <li class="toctree-l2"><a class="reference internal" href="#using">Using</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="Dynamics.html">Dynamics examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Dynamics.html">Dynamic examples</a></li>
 </ul>
 
             
@@ -162,11 +162,11 @@
 <span id="topology"></span><h1>Topology analysis<a class="headerlink" href="#topology-analysis" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="definations-and-examples">
 <h2>Definations and examples<a class="headerlink" href="#definations-and-examples" title="Permalink to this headline">¶</a></h2>
-<p>From the perspective of topology,we first compared the distribution of reaction degree of species,
+<p>From the perspective of topology, we first compared the distribution of reaction degree of species,
 defined as the number of reactions one species belonged to. We also observed the distribution of
 reaction distance between a random pair of species, defined as the minimum number of reactions
 between the two species. As an extreme case, if two species belonged to one reaction, the reaction
-distance was zero. Figure below shows the two topological distributions of our generated synthetic
+distance was zero. The figure below shows the two topological distributions of our generated synthetic
 random signaling networks compared with the signaling networks from the BioModels Database.</p>
 <a class="reference internal image-reference" href="_images/Topology.png"><img alt="_images/Topology.png" src="_images/Topology.png" style="width: 700px;" /></a>
 </div>
@@ -179,25 +179,28 @@ The code made use of libSBML with a zip file of SBML files as input and distribu
 </div>
 <div class="section" id="using">
 <h2>Using<a class="headerlink" href="#using" title="Permalink to this headline">¶</a></h2>
-<p>1. <strong>To use the Python script rxn_degree_dist.py to generate reaction degree distributions.</strong>
-For example, to analysis a set of SBML files of signaling networks downloaded from BioModels
+<ol class="arabic simple">
+<li><p><strong>To use the Python script rxn_degree_dist.py to generate reaction degree distributions.</strong></p></li>
+</ol>
+<p>For example, to analysis a set of SBML files of signaling networks downloaded from BioModels
 Database.</p>
 <ul class="simple">
 <li><p>First of all, create a folder Biomodels as on GitHub (<a class="reference external" href="https://github.com/sys-bio/artificial_random_signaling_network/tree/master/topology_analysis/degree_dist/Biomodels">https://github.com/sys-bio/artificial_random_signaling_network/tree/master/topology_analysis/degree_dist/Biomodels</a>).</p></li>
 <li><p>Then, put the <a class="reference external" href="https://github.com/sys-bio/artificial_random_signaling_network/tree/master/topology_analysis/degree_dist/Biomodels/Biomodels.zip">zip file</a> of the SBML files into the folder.</p></li>
 <li><p>Finally, run the Python script <a class="reference external" href="https://github.com/sys-bio/artificial_random_signaling_network/tree/master/topology_analysis/degree_dist/Biomodels/rxn_degree_dist.py">rxn_degree_dist.py</a>.</p></li>
-<li><p>The generated results include the degree distribution data saved as degree_dist.txt, the plot of the degree distribution saved as Degree_Distribution.pdf, and the zip file would also get upziped as BioModels.</p></li>
+<li><p>The generated results include the degree distribution data saved as degree_dist.txt, the plot of the degree distribution saved as Degree_Distribution.pdf, and the zip file would also get upziped as a folder BioModels.</p></li>
 </ul>
 <p>Users can use similar procedure to generate reaction degree distributions for synthetic signaling
 networks referring to the example on GitHub (<a class="reference external" href="https://github.com/sys-bio/artificial_random_signaling_network/tree/master/topology_analysis/degree_dist/synthetic_networks">https://github.com/sys-bio/artificial_random_signaling_network/tree/master/topology_analysis/degree_dist/synthetic_networks</a>).</p>
-<p>2. <strong>To use the Python script rxn_distance_dist.py to generate reaction distance distributions.</strong>
-For example, to analysis a set of SBML files of signaling networks downloaded from BioModels
-Database.</p>
+<ol class="arabic simple" start="2">
+<li><p><strong>To use the Python script rxn_distance_dist.py to generate reaction distance distributions.</strong></p></li>
+</ol>
+<p>For example, to analysis a set of SBML files of signaling networks downloaded from BioModels Database.</p>
 <ul class="simple">
 <li><p>First of all, create a folder Biomodels as on GitHub (<a class="reference external" href="https://github.com/sys-bio/artificial_random_signaling_network/tree/master/topology_analysis/distance_dist/Biomodels">https://github.com/sys-bio/artificial_random_signaling_network/tree/master/topology_analysis/distance_dist/Biomodels</a>).</p></li>
 <li><p>Then, put the <a class="reference external" href="https://github.com/sys-bio/artificial_random_signaling_network/tree/master/topology_analysis/degree_dist/Biomodels/Biomodels.zip">zip file</a> of the SBML files into the folder.</p></li>
 <li><p>Finally, run the Python script <a class="reference external" href="https://github.com/sys-bio/artificial_random_signaling_network/tree/master/topology_analysis/distance_dist/Biomodels/rxn_distance_dist.py">rxn_distance_dist.py</a>.</p></li>
-<li><p>The generated results include the distance distribution data saved as distance_dist.txt, the plot of the distance distribution saved as Distance_Distribution.pdf, and the zip file would also get upziped as BioModels.</p></li>
+<li><p>The generated results include the distance distribution data saved as distance_dist.txt, the plot of the distance distribution saved as Distance_Distribution.pdf, and the zip file would also get upziped as a folder BioModels.</p></li>
 </ul>
 <p>Users can use similar procedure to generate reaction distance distributions for synthetic signaling
 networks referring to the example on GitHub (<a class="reference external" href="https://github.com/sys-bio/artificial_random_signaling_network/tree/master/topology_analysis/distance_dist/synthetic_networks">https://github.com/sys-bio/artificial_random_signaling_network/tree/master/topology_analysis/distance_dist/synthetic_networks</a>).</p>
@@ -212,7 +215,7 @@ networks referring to the example on GitHub (<a class="reference external" href=
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="Dynamics.html" class="btn btn-neutral float-right" title="Dynamics examples" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="Dynamics.html" class="btn btn-neutral float-right" title="Dynamic examples" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="Visualization.html" class="btn btn-neutral float-left" title="Visualization examples" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
