@@ -32,7 +32,7 @@ installed already.
 4. Finally, download the Julia script from 
 `GitHub <https://github.com/sys-bio/artificial_random_signaling_network/blob/master/Ground_truth_generation.jl>`_
 into one folder. At the Julia console type: include("pathto/Ground_truth_generation.jl") to run 
-the main script. Note that "pathto" was the path where you saved the network generation script to. 
+the main script. Note that "pathto" was the path to which you saved the network generation script to. 
 
 5. A random signaling network would be generated in SBML format called sampleNetwork0.xml before the 
 steady state and sampleNetwork.xml after the steady state. 
@@ -62,7 +62,7 @@ be adjusted for biological applications including:
 
 * "concentration_perturb" could be used to set the factor that perturbs the concentration at the input species;
 
-* "RXN_MECH_WEIGHT_VALUE" could be used to set the probability of the reaction motifs in the order of  ["UNICAT", "UNIBI", "BIUNI", "BIBI", "CIRCLE", "DBCIRCLE"] with the sum as 1.
+* "RXN_MECH_WEIGHT_VALUE" could be used to set the probability of the reaction motifs in the order of uni-uni, uni-bi, bi-uni, bi-bi, single phosphorylation dephosphorylation circle, and dual phosphorylation dephosphorylation cycle (["UNICAT", "UNIBI", "BIUNI", "BIBI", "CIRCLE", "DBCIRCLE"]) with the sum as 1.
 
 * The number of random networks to generate could be set by changing the variable "sampleSize".
 
@@ -71,8 +71,8 @@ Default parameters setup
 --------------------------
 
 The Julia script on `GitHub <https://github.com/sys-bio/artificial_random_signaling_network/blob/master/Ground_truth_generation.jl>`_
-is a concrete example with specific parameter values shown as below. Users can refer to it by assigning
-their own values with their certain demands or based on future biological data in hand.
+is a concrete example with specific parameter values shown below. Users can refer to it by assigning
+their values to their certain demands or based on future biological data in hand.
 
 * "nSpeces" = 15, assigning the number of species as 15;
 
@@ -88,7 +88,7 @@ their own values with their certain demands or based on future biological data i
 
 * "concentration_perturb" = 2, meaning doubling the concentration at the input species.
 
-* "sampleSize" = 1, meaning generating one sample of synthetic randon signaling network.
+* "sampleSize" = 1, meaning generating one sample of the synthetic random signaling network.
 
 
 

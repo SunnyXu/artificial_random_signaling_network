@@ -19,8 +19,8 @@ Welcome to artificial_random_signaling_network's documentation!
 Introduction
 -------------
 
-The artificial_random_signaling_network Github repo provides a Julia script to generate artificial 
-random signaling networks with adjustable parameters, and also provides topological 
+The artificial_random_signaling_network GitHub repo provides a Julia script to generate artificial 
+random signaling networks with adjustable parameters and provides topological 
 analysis by Python scripts. If you would like to use any of the code, please cite the article 
-(https://www.biorxiv.org/content/10.1101/2020.05.08.084848) and the Github webpage 
+(https://www.biorxiv.org/content/10.1101/2020.05.08.084848) and the GitHub webpage 
 (https://github.com/SunnyXu/artificial_random_signaling_network). Thanks. 

@@ -29,7 +29,7 @@ Artificial random signaling network examples
 **1) Reaction networks with 15 species and 11 reactions.**
 
 The figure below illustrates two examples of randomly generated signaling networks. Figure A 
-included four types of chemical reaction motifs. Species were labelled S1 to S15. The reactions 
+included four types of chemical reaction motifs. Species were labeled S1 to S15. The reactions 
 included four uni-uni processes: S6 → S7 catalyzed by S5, S8 → S6 catalyzed by S10, S9 → S5 
 catalyzed by S15, and S11 → S9 catalyzed by S15; one bi-bi reactions: S_in + S14 → S10 + S13; 
 one single phosphorylationdephosphorylation cycle: S12 ⇋ S_out catalyzed by S7 and S1; and one 
@@ -44,7 +44,7 @@ networks had 15 species in addition to input and output species, with 11 reactio
 **2) Reaction networks with 15 species and 22 reactions.**
 
 The figure below illustrates two examples of randomly generated signaling networks. Figure A 
-included five types of chemical reaction motifes. Species were labelled S1 to S15. These include 
+included five types of chemical reaction motifs. Species were labeled S1 to S15. These include 
 three uni-uni processes: S2→S9 catalyzed by S7, S14 → S5 catalyzed by S2, and S10 → S7 catalyzed 
 by S11; one bi-uni reaction: S14 + S12 → S12; two bi-bi reactions: S11 + S_in → S15 + S13 and 
 S12 + S15 → S12 + S14; two single phosphorylation-dephosphorylation cycles: S1 ⇋ S_out catalyzed 

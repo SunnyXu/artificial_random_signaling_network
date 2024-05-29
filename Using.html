@@ -182,7 +182,7 @@ installed already.</p>
 <p>4. Finally, download the Julia script from
 <a class="reference external" href="https://github.com/sys-bio/artificial_random_signaling_network/blob/master/Ground_truth_generation.jl">GitHub</a>
 into one folder. At the Julia console type: include(“pathto/Ground_truth_generation.jl”) to run
-the main script. Note that “pathto” was the path where you saved the network generation script to.</p>
+the main script. Note that “pathto” was the path to which you saved the network generation script to.</p>
 <p>5. A random signaling network would be generated in SBML format called sampleNetwork0.xml before the
 steady state and sampleNetwork.xml after the steady state.</p>
 <p>6. The Julia script was implemented in Julia 1.6 on Windows 10 with RoadRunner.jl version 0.1.2 for
@@ -201,15 +201,15 @@ be adjusted for biological applications including:</p>
 <li><p>The randomly assigned ranges for species concentrations by “rnd_species_initial” and “rnd_species_range”, for species concentrations in the range of [rnd_species_initial, rnd_species_initial + rnd_species_range);</p></li>
 <li><p>The randomly assigned ranges for rate constants by “rnd_parameter_initial” and “rnd_parameter_range”, for rate constants in the range of [rnd_parameter_initial, rnd_parameter_initial + rnd_parameter_range);</p></li>
 <li><p>“concentration_perturb” could be used to set the factor that perturbs the concentration at the input species;</p></li>
-<li><p>“RXN_MECH_WEIGHT_VALUE” could be used to set the probability of the reaction motifs in the order of  [“UNICAT”, “UNIBI”, “BIUNI”, “BIBI”, “CIRCLE”, “DBCIRCLE”] with the sum as 1.</p></li>
+<li><p>“RXN_MECH_WEIGHT_VALUE” could be used to set the probability of the reaction motifs in the order of uni-uni, uni-bi, bi-uni, bi-bi, single phosphorylation dephosphorylation circle, and dual phosphorylation dephosphorylation cycle ([“UNICAT”, “UNIBI”, “BIUNI”, “BIBI”, “CIRCLE”, “DBCIRCLE”]) with the sum as 1.</p></li>
 <li><p>The number of random networks to generate could be set by changing the variable “sampleSize”.</p></li>
 </ul>
 </div>
 <div class="section" id="default-parameters-setup">
 <h2>Default parameters setup<a class="headerlink" href="#default-parameters-setup" title="Permalink to this headline">¶</a></h2>
 <p>The Julia script on <a class="reference external" href="https://github.com/sys-bio/artificial_random_signaling_network/blob/master/Ground_truth_generation.jl">GitHub</a>
-is a concrete example with specific parameter values shown as below. Users can refer to it by assigning
-their own values with their certain demands or based on future biological data in hand.</p>
+is a concrete example with specific parameter values shown below. Users can refer to it by assigning
+their values to their certain demands or based on future biological data in hand.</p>
 <ul class="simple">
 <li><p>“nSpeces” = 15, assigning the number of species as 15;</p></li>
 <li><p>“nRxns” = 22, assigning the number of reactions as 22;</p></li>
@@ -218,7 +218,7 @@ their own values with their certain demands or based on future biological data i
 <li><p>“rxn_parameter_initial” = 0, and “rnd_parameter” = 1, meaning random generation for rate constants in the range of [0, 1);</p></li>
 <li><p>“RXN_MECH_WEIGHT_VALUE” set as [0.2, 0.2, 0.2, 0.2, 0.1, 0.1] for the probabilities of reaction motifs in the order of  [“UNICAT”, “UNIBI”, “BIUNI”, “BIBI”, “CIRCLE”, “DBCIRCLE”] with the sum as 1.</p></li>
 <li><p>“concentration_perturb” = 2, meaning doubling the concentration at the input species.</p></li>
-<li><p>“sampleSize” = 1, meaning generating one sample of synthetic randon signaling network.</p></li>
+<li><p>“sampleSize” = 1, meaning generating one sample of the synthetic random signaling network.</p></li>
 </ul>
 </div>
 </div>
