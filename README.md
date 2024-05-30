@@ -7,7 +7,7 @@ random signaling networks with adjustable parameters, and also provides topologi
 
 ## Citing
 
-If you use any of the codes, please cite the bioRxiv (https://www.biorxiv.org/content/10.1101/2020.05.08.084848).
+If you use any of the codes, please cite the article (https://www.biorxiv.org/content/10.1101/2020.05.08.084848).
 
 ## Documentation
 
