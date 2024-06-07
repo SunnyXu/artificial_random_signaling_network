@@ -74,7 +74,7 @@ The Julia script on `GitHub <https://github.com/sys-bio/artificial_random_signal
 is a concrete example with specific parameter values shown below. Users can refer to it by assigning
 their values to their certain demands or based on future biological data in hand.
 
-* "nSpeces" = 15, assigning the number of species as 15;
+* "nSpeces" = 15, assigning nSpecies as 15, which excludes the input and output species but includes gene species. Therefore, the total number of species should be 17.
 
 * "nRxns" = 22, assigning the number of reactions as 22;
 
